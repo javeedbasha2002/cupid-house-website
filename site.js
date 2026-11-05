@@ -1,7 +1,5 @@
 const navToggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.primary-nav');
-const WAITRPOS_MENU_URL = ''; // Add Cupid House's public WaitrPOS customer app URL here.
-
 navToggle?.addEventListener('click', () => {
   const expanded = navToggle.getAttribute('aria-expanded') === 'true';
   navToggle.setAttribute('aria-expanded', String(!expanded));
@@ -38,32 +36,11 @@ if (viewer) {
 // when the template is deployed to a new café domain. The readable menu link
 // remains available if the QR image service cannot be reached.
 const localMenuUrl = new URL('menu.html', window.location.href).href;
-const menuUrl = WAITRPOS_MENU_URL || localMenuUrl;
+const menuUrl = localMenuUrl;
 document.querySelectorAll('[data-qr]').forEach((image) => {
   const params = new URLSearchParams({ text: menuUrl, size: '240', margin: '2', dark: '6b142d', light: 'f6efe6', format: 'svg' });
   image.src = `https://quickchart.io/qr?${params.toString()}`;
 });
-
-if (WAITRPOS_MENU_URL) {
-  document.querySelectorAll('a[href="menu.html"]').forEach((link) => {
-    link.href = WAITRPOS_MENU_URL;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-  });
-  const handoffLink = document.querySelector('[data-waitr-menu]');
-  if (handoffLink) {
-    handoffLink.href = WAITRPOS_MENU_URL;
-    handoffLink.removeAttribute('aria-disabled');
-    handoffLink.target = '_blank';
-    handoffLink.rel = 'noopener noreferrer';
-    document.querySelector('[data-menu-status]')?.remove();
-  }
-  if (document.body.hasAttribute('data-menu-handoff')) {
-    window.location.replace(WAITRPOS_MENU_URL);
-  }
-} else {
-  document.querySelector('[data-waitr-menu]')?.addEventListener('click', (event) => event.preventDefault());
-}
 
 const revealTargets = document.querySelectorAll('.welcome, .night-card, .photo-strip, .story-copy, .visit-layout, .menu-spotlight');
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

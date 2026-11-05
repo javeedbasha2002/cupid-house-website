@@ -3,45 +3,244 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#350915" />
-    <meta name="description" content="Open the Cupid House food and drinks menu in the WaitrPOS customer app." />
-    <title>Menu on WaitrPOS | Cupid House Rooftop Taproom & Kitchen</title>
+    <meta name="theme-color" content="#65001b" />
+    <meta name="description" content="Browse the Cupid House food, cocktails, mocktails and spirits menu in Puducherry. Prices in Indian rupees." />
+    <title>Food & Drinks Menu | Cupid House Rooftop Taproom & Kitchen, Puducherry</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20261105-2" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20261105-3" />
     <script src="site.js" defer></script>
   </head>
-  <body data-menu-handoff>
+  <body class="menu-page">
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
+    <header class="site-header interior-header">
       <a class="brand" href="index.html" aria-label="Cupid House home"><img src="assets/cupid-house-logo.png" alt="Cupid House logo" /><span>CUPID HOUSE<small>ROOFTOP · PUDUCHERRY</small></span></a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button>
       <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
         <a href="index.html">Home</a><a class="active" href="menu.html">Menu</a><a href="story.html">The rooftop</a><a href="journal.html">Journal</a><a href="visit.html">Find us</a>
-        <a class="nav-cta" href="menu.html">Open the menu <span>↗</span></a>
+        <a class="nav-cta" href="visit.html">Find us <span>↗</span></a>
       </nav>
     </header>
 
-    <main id="main" class="waitr-handoff">
-      <section class="waitr-handoff-card">
-        <img class="waitr-handoff-logo" src="assets/cupid-house-logo.png" alt="Cupid House Rooftop Taproom and Kitchen logo" />
-        <div class="eyebrow">CUPID HOUSE · FOOD & DRINKS</div>
-        <h1>Menu by<br /><em>WaitrPOS.</em></h1>
-        <p>Open the Cupid House menu in the WaitrPOS customer app.</p>
-        <a class="waitr-menu-link" data-waitr-menu href="" aria-disabled="true">Open our menu <span>↗</span></a>
-        <span class="waitr-menu-status" data-menu-status role="status">The WaitrPOS customer app URL is needed before launch.</span>
-      </section>
+    <main id="main" class="menu-book">
+      <div class="menu-frame">
+        <section class="menu-cover" aria-labelledby="menu-title">
+          <p class="menu-wordmark">CUPID HOUSE</p>
+          <h1 id="menu-title">Menu</h1>
+          <p class="menu-location">ROOFTOP · PONDICHERRY</p>
+          <div class="menu-intro-grid">
+            <div><h2>FOOD</h2><p>Salads & veg bites · Fries & nachos · Chicken · Seafood · Meat & egg · Asian wok & curries · Pasta & steaks · Burgers & South Indian</p></div>
+            <div><h2>DRINKS</h2><p>Signature · Classic · Strong big cocktails · Mocktails · Shooters · Whisky · Gin, vodka & rum · Shots & brandy</p></div>
+          </div>
+          <a class="menu-browse" href="#food">Browse the menu <span>↓</span></a>
+          <div class="menu-cover-footer"><a href="tel:+919363174287">Reserve <strong>93631 74287</strong></a><span>All prices in ₹</span></div>
+        </section>
+
+        <nav class="menu-jump" aria-label="Menu sections">
+          <a href="#food">Food</a><a href="#drinks">Drinks</a><a href="#food-seafood">Seafood</a><a href="#drinks-signature">Signatures</a>
+        </nav>
+
+        <div class="menu-content">
+          <section class="menu-group" id="food" aria-labelledby="food-heading">
+            <header class="menu-group-heading"><span>THE KITCHEN</span><h2 id="food-heading">Food</h2><p>From bar bites to the rooftop table.</p></header>
+
+            <section class="menu-category" id="food-salads"><header><p>Bar bites & small plates</p><h3>Salads & Veg Bites</h3></header>
+              <div class="menu-subcategory"><h4>Fresh & crunchy</h4>
+                <article class="menu-item"><div><h5>Green Salad</h5><p>Garden greens, cucumber, tomato, lemon dressing</p></div><data value="215">215</data></article>
+                <article class="menu-item"><div><h5>Caesar Salad</h5><p>Romaine, parmesan, croutons, creamy Caesar dressing</p></div><data value="269">269</data></article>
+              </div>
+              <div class="menu-subcategory"><h4>Vegetarian bites</h4>
+                <article class="menu-item"><div><h5>Karuveppilai Paneer</h5><p>Crispy paneer in curry leaves & South Indian spices</p></div><data value="325">325</data></article>
+                <article class="menu-item"><div><h5>Chilli Paneer</h5><p>Spicy Indo-Chinese sauce, peppers & onions</p></div><data value="325">325</data></article>
+                <article class="menu-item"><div><h5>Chettinad Mushroom</h5><p>Tossed in bold Chettinad masala</p></div><data value="285">285</data></article>
+                <article class="menu-item"><div><h5>Gobi 65</h5><p>Crispy cauliflower in spicy South Indian masala</p></div><data value="245">245</data></article>
+              </div>
+            </section>
+
+            <section class="menu-category" id="food-fries"><header><p>Bar bites & small plates</p><h3>Fries & Nachos</h3></header><div class="menu-subcategory"><h4>Fries, nachos & crunch</h4>
+              <article class="menu-item"><div><h5>Cheese Loaded French Fries</h5></div><data value="339">339</data></article>
+              <article class="menu-item"><div><h5>Chicken Nachos</h5></div><data value="299">299</data></article>
+              <article class="menu-item"><div><h5>Jalapeño Cheese Poppers</h5><p>Golden bites with creamy cheese & jalapeños</p></div><data value="275">275</data></article>
+              <article class="menu-item"><div><h5>Onion Rings</h5></div><data value="249">249</data></article>
+              <article class="menu-item"><div><h5>French Fries</h5></div><data value="249">249</data></article>
+              <article class="menu-item"><div><h5>Nachos</h5></div><data value="249">249</data></article>
+              <article class="menu-item"><div><h5>Crispy Corns</h5></div><data value="225">225</data></article>
+            </div></section>
+
+            <section class="menu-category" id="food-chicken"><header><p>From the pan & grill</p><h3>Chicken</h3></header><div class="menu-subcategory"><h4>Chicken starters</h4>
+              <article class="menu-item"><div><h5>Cupid Schezwan Lollipop</h5></div><data value="335">335</data></article>
+              <article class="menu-item"><div><h5>Cupid Barbecue Wings</h5></div><data value="335">335</data></article>
+              <article class="menu-item"><div><h5>Cupid Wings</h5></div><data value="335">335</data></article>
+              <article class="menu-item"><div><h5>Peri-Peri Cupid Wings</h5></div><data value="335">335</data></article>
+              <article class="menu-item"><div><h5>Wok Toss Chilli Chicken</h5></div><data value="385">385</data></article>
+              <article class="menu-item"><div><h5>Chicken Ghee Roast</h5></div><data value="345">345</data></article>
+              <article class="menu-item"><div><h5>Crispy Peri Peri Chicken</h5></div><data value="375">375</data></article>
+              <article class="menu-item"><div><h5>Karuveppilai Chicken</h5></div><data value="345">345</data></article>
+              <article class="menu-item"><div><h5>Pepper Chicken Fry</h5></div><data value="345">345</data></article>
+              <article class="menu-item"><div><h5>Podi Chicken</h5></div><data value="345">345</data></article>
+              <article class="menu-item"><div><h5>Popcorn Chicken</h5></div><data value="325">325</data></article>
+            </div></section>
+
+            <section class="menu-category" id="food-seafood"><header><p>From the pan & grill</p><h3>Seafood</h3></header><div class="menu-subcategory"><h4>Prawns & fish</h4>
+              <article class="menu-item"><div><h5>Butter Garlic Prawn</h5></div><data value="395">395</data></article>
+              <article class="menu-item"><div><h5>Prawn Ghee Roast</h5><p>Roasted in ghee with fiery Mangalorean spices</p></div><data value="395">395</data></article>
+              <article class="menu-item"><div><h5>Tawa Fish Fry</h5><p>Spice-marinated & pan-fried golden</p></div><data value="395">395</data></article>
+              <article class="menu-item"><div><h5>Karuveppilai Prawn</h5><p>Fried prawns in curry leaves & South Indian spices</p></div><data value="395">395</data></article>
+              <article class="menu-item"><div><h5>Prawn 65</h5><p>Crispy, spicy, South Indian masala</p></div><data value="395">395</data></article>
+              <article class="menu-item"><div><h5>Fish Finger</h5></div><data value="395">395</data></article>
+              <article class="menu-item"><div><h5>Wok Toss Chilli Fish</h5><p>Spicy Indo-Chinese sauce, peppers & onions</p></div><data value="425">425</data></article>
+            </div></section>
+
+            <section class="menu-category" id="food-meat"><header><p>From the pan & grill</p><h3>Meat & Egg</h3></header><div class="menu-subcategory"><h4>Beef · pork · mutton · egg</h4>
+              <article class="menu-item"><div><h5>Mongolian Style Beef Fry</h5><p>Bold, savoury Mongolian-style sauce</p></div><data value="425">425</data></article>
+              <article class="menu-item"><div><h5>Wok Toss Chilli Pork</h5><p>Spicy Indo-Chinese sauce, peppers & onions</p></div><data value="475">475</data></article>
+              <article class="menu-item"><div><h5>Madurai Mutton Chops</h5><p>Slow-cooked in spicy Madurai masala</p></div><data value="495">495</data></article>
+              <article class="menu-item"><div><h5>Gunpowder Beef Bites</h5><p>Tossed in fiery gunpowder masala</p></div><data value="385">385</data></article>
+              <article class="menu-item"><div><h5>Wok Toss Chilli Egg</h5><p>Spicy Indo-Chinese sauce, peppers & onions</p></div><data value="335">335</data></article>
+              <article class="menu-item"><div><h5>Kallu Kada Mutta</h5><p>Street-style eggs in South Indian masala</p></div><data value="199">199</data></article>
+            </div></section>
+
+            <section class="menu-category" id="food-asian"><header><p>Bold flavours, wok-tossed</p><h3>Asian Wok & Curries</h3></header>
+              <div class="menu-subcategory"><h4>Fried rice & noodles <span class="menu-columns"><span>Veg</span><span>Chicken</span><span>Mixed</span></span></h4>
+                <article class="menu-item menu-matrix"><div><h5>Thai Basil Fried Rice</h5></div><data value="295">295</data><data value="355">355</data><data value="395">395</data></article>
+                <article class="menu-item menu-matrix"><div><h5>Thai Basil Fried Noodles</h5></div><data value="295">295</data><data value="355">355</data><data value="395">395</data></article>
+                <article class="menu-item menu-matrix"><div><h5>Green Flag Fried Noodles</h5></div><data value="295">295</data><data value="355">355</data><data value="395">395</data></article>
+                <article class="menu-item menu-matrix"><div><h5>Red Flag Fried Rice</h5><p>Fiery Schezwan</p></div><data value="295">295</data><data value="355">355</data><data value="395">395</data></article>
+                <article class="menu-item menu-matrix"><div><h5>Red Flag Fried Noodles</h5><p>Fiery Schezwan</p></div><data value="295">295</data><data value="355">355</data><data value="395">395</data></article>
+              </div>
+              <div class="menu-subcategory"><h4>Thai curry <span class="menu-columns"><span>Veg</span><span>Chicken</span></span></h4>
+                <article class="menu-item menu-matrix menu-matrix-two"><div><h5>Red Thai Curry</h5><p>Rich coconut milk & vibrant spices</p></div><data value="385">385</data><data value="425">425</data></article>
+                <article class="menu-item menu-matrix menu-matrix-two"><div><h5>Green Thai Curry</h5><p>Creamy coconut milk & fresh herbs</p></div><data value="385">385</data><data value="425">425</data></article>
+              </div>
+            </section>
+
+            <section class="menu-category" id="food-pasta"><header><p>Familiar favourites, Cupid House style</p><h3>Pasta & Steaks</h3></header>
+              <div class="menu-subcategory"><h4>Pasta <span class="menu-columns"><span>Veg</span><span>Chicken</span></span></h4><p class="menu-aside">Spaghetti or penne, same price</p>
+                <article class="menu-item menu-matrix menu-matrix-two"><div><h5>Alfredo</h5><p>Creamy white sauce</p></div><data value="345">345</data><data value="375">375</data></article>
+                <article class="menu-item menu-matrix menu-matrix-two"><div><h5>Arrabbiata</h5><p>Spicy tomato sauce</p></div><data value="345">345</data><data value="375">375</data></article>
+                <article class="menu-item menu-matrix menu-matrix-two"><div><h5>Aglio e Olio</h5><p>Classic garlic & olive oil</p></div><data value="345">345</data><data value="375">375</data></article>
+              </div>
+              <div class="menu-subcategory"><h4>Steaks & comfort food</h4>
+                <article class="menu-item"><div><h5>Pepper Chicken Steak</h5><p>Creamy pepper sauce & classic sides</p></div><data value="465">465</data></article>
+                <article class="menu-item"><div><h5>House Cut Beef Steak</h5><p>Velvety sauce & classic sides</p></div><data value="525">525</data></article>
+              </div>
+              <div class="menu-subcategory"><h4>Plain · chicken <span class="menu-columns"><span>Plain</span><span>Chicken</span></span></h4>
+                <article class="menu-item menu-matrix menu-matrix-two"><div><h5>Mac & Cheese</h5></div><data value="375">375</data><data value="415">415</data></article>
+              </div>
+            </section>
+
+            <section class="menu-category" id="food-burgers"><header><p>Familiar favourites</p><h3>Burgers & South Indian</h3></header>
+              <div class="menu-subcategory"><h4>Burgers</h4>
+                <article class="menu-item"><div><h5>Chicken Cheese Burger</h5></div><data value="365">365</data></article>
+                <article class="menu-item"><div><h5>Beef Cheese Burger</h5></div><data value="395">395</data></article>
+              </div>
+              <div class="menu-subcategory"><h4>South Indian favourites</h4>
+                <article class="menu-item"><div><h5>Podi Idly</h5><p>Bite-sized idlis in South Indian podi & ghee</p></div><data value="345">345</data></article>
+                <article class="menu-item"><div><h5>Paniyaaram</h5><p>Crispy outside, soft inside</p></div><data value="345">345</data></article>
+              </div>
+            </section>
+          </section>
+
+          <section class="menu-group" id="drinks" aria-labelledby="drinks-heading">
+            <header class="menu-group-heading"><span>FROM THE BAR</span><h2 id="drinks-heading">Drinks</h2><p>House cocktails, zero-proof pours and classics.</p></header>
+            <section class="menu-category" id="drinks-signature"><header><p>Only at Cupid House</p><h3>Signature Cocktails</h3></header><div class="menu-subcategory"><h4>House signatures</h4>
+              <article class="menu-item"><div><h5>Vodka Vayvari</h5><p>Vetiver vodka, blood orange, red sour plum, sugar foam</p></div><data value="549">549</data></article>
+              <article class="menu-item"><div><h5>Pataya Juleep</h5><p>Whisky, basil, lemongrass, tender coconut, lime</p></div><data value="585">585</data></article>
+              <article class="menu-item"><div><h5>All Flora No Dora</h5><p>Gin, green tea berry, superlime, tonic</p></div><data value="549">549</data></article>
+              <article class="menu-item"><div><h5>Oh My Strawberry</h5><p>Vodka, watermelon, coconut, strawberry</p></div><data value="549">549</data></article>
+              <article class="menu-item"><div><h5>Pho Kin Hot</h5><p>Brandy, warm apple, medicinal spices</p></div><data value="549">549</data></article>
+              <article class="menu-item"><div><h5>Ratafia</h5><p>Whisky, ratafia, cu-cu tea, bitters & smoke</p></div><data value="549">549</data></article>
+              <article class="menu-item"><div><h5>Ula Ula Nackee</h5><p>Tequila, cucumber pickle, burnt citrus</p></div><data value="625">625</data></article>
+            </div></section>
+
+            <section class="menu-category" id="drinks-classic"><header><p>The ones you know & love</p><h3>Classic Cocktails</h3></header><div class="menu-subcategory"><h4>Classics</h4>
+              <article class="menu-item"><div><h5>Mojito</h5><p>White rum, mint, lime, soda</p></div><data value="449">449</data></article>
+              <article class="menu-item"><div><h5>Daiquiri</h5><p>White rum, lime, sugar syrup</p></div><data value="449">449</data></article>
+              <article class="menu-item"><div><h5>Piña Colada</h5><p>White rum, coconut cream, pineapple</p></div><data value="449">449</data></article>
+              <article class="menu-item"><div><h5>Sex on the Beach</h5><p>Vodka, peach schnapps, orange, cranberry</p></div><data value="449">449</data></article>
+              <article class="menu-item"><div><h5>Cosmopolitan</h5><p>Vodka, triple sec, cranberry, lime</p></div><data value="449">449</data></article>
+              <article class="menu-item"><div><h5>Margarita</h5><p>Tequila, triple sec, lime</p></div><data value="599">599</data></article>
+              <article class="menu-item"><div><h5>Old Fashioned</h5><p>Bourbon, bitters, sugar, orange peel</p></div><data value="625">625</data></article>
+            </div></section>
+
+            <section class="menu-category" id="drinks-strong"><header><p>Go big tonight</p><h3>Strong Big Cocktails</h3></header><div class="menu-subcategory"><h4>Big & strong</h4>
+              <article class="menu-item"><div><h5>One Night Only</h5><p>Dark rum, cinnamon, lychee, coconut water</p></div><data value="799">799</data></article>
+              <article class="menu-item"><div><h5>LIT</h5><p>Vodka, gin, white rum, tequila, triple sec, lime, cola</p></div><data value="899">899</data></article>
+              <article class="menu-item"><div><h5>Bull Frog</h5><p>Vodka, rum, gin, tequila, blue curaçao, energy drink</p></div><data value="899">899</data></article>
+              <article class="menu-item"><div><h5>French 69</h5><p>Vodka, rum, gin, bitters, cane juice & Red Bull</p></div><data value="799">799</data></article>
+              <article class="menu-item"><div><h5>Lips Don't Lie</h5><p>Baileys, strawberry, Kahlua, bitter chocolate</p></div><data value="625">625</data></article>
+            </div></section>
+
+            <section class="menu-category" id="drinks-mocktails"><header><p>Zero proof, full flavour</p><h3>Mocktails</h3></header><div class="menu-subcategory"><h4>Mocktails</h4>
+              <article class="menu-item"><div><h5>Biscuit Town</h5><p>Cold brew, peanut butter, almond, biscuit</p></div><data value="329">329</data></article>
+              <article class="menu-item"><div><h5>Watermelon Cooler</h5><p>Watermelon, lemongrass, tender coconut</p></div><data value="329">329</data></article>
+              <article class="menu-item"><div><h5>Tempest</h5><p>Cranberry, sakura rose, yuzu, soda</p></div><data value="329">329</data></article>
+              <article class="menu-item"><div><h5>Stylo Milo</h5><p>Strawberry, Milo, milk</p></div><data value="329">329</data></article>
+              <article class="menu-item"><div><h5>I'm Peach-in</h5><p>Orange, tea brew, peach, soda</p></div><data value="329">329</data></article>
+              <article class="menu-item"><div><h5>Mango Passion</h5><p>Mango, passion fruit, soda</p></div><data value="329">329</data></article>
+              <article class="menu-item"><div><h5>Forbidden Exotica</h5><p>Watermelon, passion fruit, muskmelon, mint</p></div><data value="329">329</data></article>
+            </div></section>
+
+            <section class="menu-category" id="drinks-shooters"><header><p>Grab the squad</p><h3>Shooters</h3></header><div class="menu-subcategory"><h4>Shooters <span class="menu-columns"><span>Each</span><span>Combo 4</span></span></h4><p class="menu-aside">Combo = 4 of the same shooter</p>
+              <article class="menu-item menu-matrix menu-matrix-two"><div><h5>Cupid Gives Wings</h5></div><data value="385">385</data><data value="999">999</data></article>
+              <article class="menu-item menu-matrix menu-matrix-two"><div><h5>Red Lips</h5></div><data value="385">385</data><data value="999">999</data></article>
+              <article class="menu-item menu-matrix menu-matrix-two"><div><h5>Kamikaze</h5></div><data value="385">385</data><data value="999">999</data></article>
+              <article class="menu-item menu-matrix menu-matrix-two"><div><h5>Mind Blaster</h5></div><data value="385">385</data><data value="999">999</data></article>
+              <article class="menu-item menu-matrix menu-matrix-two"><div><h5>Don't Touch My Banana</h5></div><data value="399">399</data><data value="999">999</data></article>
+              <article class="menu-item menu-matrix menu-matrix-two"><div><h5>Jager Bomb</h5></div><data value="425">425</data><data value="1549">1549</data></article>
+            </div></section>
+
+            <section class="menu-category" id="drinks-whisky"><header><p>Straight drinks · all pours 30 ml</p><h3>Single Malt & Whisky</h3></header>
+              <div class="menu-subcategory"><h4>Single malt</h4>
+                <article class="menu-item"><div><h5>Glenfiddich 12</h5></div><data value="450">450</data></article>
+                <article class="menu-item"><div><h5>Paul John</h5></div><data value="450">450</data></article>
+                <article class="menu-item"><div><h5>Glenlivet</h5></div><data value="400">400</data></article>
+              </div>
+              <div class="menu-subcategory"><h4>Whisky</h4>
+                <article class="menu-item"><div><h5>JW Black Label</h5></div><data value="430">430</data></article>
+                <article class="menu-item"><div><h5>Jack Daniel's No. 7</h5></div><data value="400">400</data></article>
+                <article class="menu-item"><div><h5>JW Red Label</h5></div><data value="350">350</data></article>
+                <article class="menu-item"><div><h5>Ballantine's</h5></div><data value="350">350</data></article>
+                <article class="menu-item"><div><h5>Teacher's Highland Cream</h5></div><data value="350">350</data></article>
+                <article class="menu-item"><div><h5>100 Pipers</h5></div><data value="350">350</data></article>
+                <article class="menu-item"><div><h5>Jim Beam Bourbon</h5></div><data value="330">330</data></article>
+                <article class="menu-item"><div><h5>Jameson</h5></div><data value="330">330</data></article>
+              </div>
+            </section>
+
+            <section class="menu-category" id="drinks-spirits"><header><p>Straight drinks · all pours 30 ml</p><h3>Gin, Vodka & Rum</h3></header>
+              <div class="menu-subcategory"><h4>Gin</h4><article class="menu-item"><div><h5>Tanqueray</h5></div><data value="400">400</data></article><article class="menu-item"><div><h5>Bombay Sapphire</h5></div><data value="350">350</data></article><article class="menu-item"><div><h5>Greater Than</h5></div><data value="330">330</data></article></div>
+              <div class="menu-subcategory"><h4>Vodka</h4><article class="menu-item"><div><h5>Ketel One</h5></div><data value="425">425</data></article><article class="menu-item"><div><h5>Grey Goose</h5></div><data value="425">425</data></article><article class="menu-item"><div><h5>Absolut</h5></div><data value="330">330</data></article><article class="menu-item"><div><h5>Smirnoff</h5></div><data value="299">299</data></article></div>
+              <div class="menu-subcategory"><h4>Rum</h4><article class="menu-item"><div><h5>Old Monk Legend</h5></div><data value="300">300</data></article><article class="menu-item"><div><h5>Old Monk XXX</h5></div><data value="250">250</data></article><article class="menu-item"><div><h5>Bacardi White</h5></div><data value="250">250</data></article></div>
+            </section>
+
+            <section class="menu-category" id="drinks-shots"><header><p>Straight drinks · all pours 30 ml</p><h3>Shots & Brandy</h3></header>
+              <div class="menu-subcategory"><h4>Shots</h4>
+                <article class="menu-item"><div><h5>Don Julio</h5></div><data value="550">550</data></article>
+                <article class="menu-item"><div><h5>Jägermeister</h5></div><data value="389">389</data></article>
+                <article class="menu-item"><div><h5>Baileys</h5></div><data value="389">389</data></article>
+                <article class="menu-item"><div><h5>Don Angel</h5></div><data value="330">330</data></article>
+                <article class="menu-item"><div><h5>Camino Silver</h5></div><data value="330">330</data></article>
+                <article class="menu-item"><div><h5>Sambuca</h5></div><data value="330">330</data></article>
+              </div>
+              <div class="menu-subcategory"><h4>Brandy</h4><article class="menu-item"><div><h5>Monarch</h5></div><data value="350">350</data></article><article class="menu-item"><div><h5>Morpheus</h5></div><data value="230">230</data></article></div>
+            </section>
+          </section>
+        </div>
+
+        <footer class="menu-last-call"><p>Make an evening of it.</p><a href="tel:+919363174287">Reserve a table · 93631 74287 <span>↗</span></a><span>Prices in ₹ · Menu items and prices may change.</span></footer>
+      </div>
     </main>
 
     <footer class="site-footer">
       <div class="footer-main">
         <div class="footer-brand"><a class="brand" href="index.html"><img src="assets/cupid-house-logo.png" alt="" /><span>CUPID HOUSE<small>ROOFTOP · PUDUCHERRY</small></span></a><p>Rooftop Taproom & Kitchen · Mission Street</p></div>
         <div class="footer-column"><span class="footer-label">COME BY</span><p>170 Mission Street,<br />Mahatma Gandhi Road,<br />MG Road Area, Puducherry 605001</p><a href="visit.html">Get directions ↗</a></div>
-        <div class="footer-column"><span class="footer-label">SITE</span><a href="menu.html">Menu</a><a href="story.html">The rooftop</a><a href="journal.html">Journal</a><a href="visit.html">Find us</a></div>
+        <div class="footer-column"><span class="footer-label">SITE</span><a href="index.html">Home</a><a href="story.html">The rooftop</a><a href="journal.html">Journal</a><a href="visit.html">Find us</a></div>
         <a class="footer-qr" href="menu.html" aria-label="Open the Cupid House menu"><img class="menu-qr" data-qr alt="QR code linking to the Cupid House menu" /><span>SCAN FOR<br />THE MENU ↗</span></a>
       </div>
-      <div class="footer-bottom"><a href="index.html">© <span data-year></span> CUPID HOUSE</a><span class="powered">Powered by <strong>WaitrPOS</strong></span><a href="menu.html">MENU QR ↗</a></div>
+      <div class="footer-bottom"><a href="index.html">© <span data-year></span> CUPID HOUSE</a><span class="powered">Powered by <strong>WaitrPOS</strong></span><a href="#main">BACK TO TOP ↑</a></div>
     </footer>
   </body>
 </html>
